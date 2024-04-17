@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "inter-regular";
+  src: url(./fonts/Inter-Regular.ttf);
+}
+
+:root {
+  --color1: #474dff;
+  --color2: white;
+  --color3: #1d1d1d;
+  --color4: #0d0d0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: hidden; */
+  height: 100vh;
+  background: var(--color3);
+  font-family: "inter-regular";
+  color: var(--color2);
+}
+
+body nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img {
+  height: 100px;
+}
