@@ -15,11 +15,6 @@
   list-style-type: none;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
   max-width: 1440px;
   margin: auto;
   /* overflow: hidden; */
@@ -31,117 +26,85 @@ body {
 body nav {
   /* background: green; */
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   padding: 30px 45px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 body nav h2 {
   /* width: 50%; */
 }
 body nav ul {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 body nav ul {
   cursor: pointer;
 }
 .header {
   /* border: 1px solid pink; */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 45px;
-  margin: 30px auto;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.header .header-left {
-  width: 50%;
-}
 .header .header-left h1 {
   font-size: 5rem;
   margin-bottom: 20px;
 }
 .header .header-left h3 {
-    font-size: 1.8rem;
-    color: var(--color1);
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: var(--color1);
+  margin-bottom: 15px;
 }
 .header .header-right {
   width: 50%;
 }
-.header-right img#modem {
+.header-right {
+  width: 50%;
+}
+#modem {
   width: 100%;
+  margin: 0 auto;
 }
 .infos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--color4);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px;
+  display: grid;
+  grid-template-columns: 33% 67%;
+  background: var(--color4);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
 }
 .infos h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-.infos .infos-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 .infos .infos-left .btn-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /* width: 100%; */
-    height: 100%;
-    gap: 10px;
-    padding: 0 10px;
+  height: 100%;
+  gap: 10px;
+  padding: 0 10px;
 }
 .infos .infos-left .btn-container button {
-    width: 150px;
-    color: var(--color2);
-    background: var(--color1);
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    padding: 10px 0;
-    border: none;
-    cursor: pointer;
+  width: 150px;
+  color: var(--color2);
+  background: var(--color1);
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
 }
 .infos .infos-right {
-    width: 66%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  width: 66%;
 }
 .infos .infos-right .investors {
-    width: 100%;
-    margin: auto;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: center;
+    height: 80%;
 }
 .infos .infos-right .investors .img-container {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 .infos .infos-right .investors img {
     height: 60px;
