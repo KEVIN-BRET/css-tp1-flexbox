@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
@@ -21,6 +22,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  max-width: 1440px;
+  margin: auto;
   /* overflow: hidden; */
   height: 100vh;
   background: var(--color3);
@@ -29,13 +33,135 @@ body {
 }
 
 body nav {
+  /* background: green; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 45px;
+}
+
+body nav h2 {
+  width: 50%;
+}
+
+body nav ul {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body nav ul {
+  cursor: pointer;
+}
+
+.header {
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 45px;
+  gap: 20px;
+}
+
+.header .header-left {
+  width: 50%;
+}
+
+.header .header-left h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.header .header-left h3 {
+    font-size: 1.5rem;
+    color: var(--color1);
+    margin-bottom: 15px;
+}
+
+.header .header-right {
+  width: 50%;
+}
+
+.header-right img {
+  width: 100%;
+}
+
+.infos {
+    /* border: 1px solid pink; */
+    
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
+    background: var(--color4);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
 }
 
-img {
-  height: 100px;
+.infos h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.infos .infos-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+    /* width: 100%; */
+}
+
+.infos .infos-left .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.infos .infos-left .btn-container button {
+    width: 100%;
+    color: var(--color2);
+    background: var(--color1);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.infos .infos-right {
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.infos .infos-right .investors {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.infos .infos-right .investors .img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.infos .infos-right .investors img {
+    height: 60px;
 }
