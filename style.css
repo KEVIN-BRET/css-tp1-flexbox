@@ -32,6 +32,7 @@ nav ul {
 .header {
   display: grid;
   grid-template-columns: 50% 50%;
+  align-items: center;
   margin: 30px auto;
 }
 h1 {
@@ -92,6 +93,40 @@ button {
   height: 60px;
 }
 
-@media screen {
-  
+/********** MEDIA QUERIES **********/
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .header-left-container h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop first  */
+@media screen and (max-width: 768px) {
+  nav {
+    grid-template-columns: 35% 65%;
+  }
+  .header {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .header-left-container h3 {
+    font-size: 1rem;
+  }
+  .infos {
+    display: block;
+    text-align: center;
+  }
+  .infos-left {
+    align-items: center;
+  }
+  .img-container img {
+    height: 35px;
+  }
 }
